@@ -1,7 +1,7 @@
 import React from 'react';
 import './Body.css';
 
-const Body = () => {
+function Body(){
   return (
     <div className="body">
       <section className="hero">
