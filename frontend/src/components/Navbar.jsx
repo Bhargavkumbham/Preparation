@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -15,7 +9,7 @@ const Navbar = () => {
           <a href="/">MyWebsite</a>
         </div>
         
-        <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
+        <ul className="navbar-menu">
           <li className="navbar-item">
             <a href="/" className="navbar-link">Home</a>
           </li>
@@ -29,12 +23,6 @@ const Navbar = () => {
             <a href="/contact" className="navbar-link">Contact</a>
           </li>
         </ul>
-        
-        <div className="navbar-toggle" onClick={toggleMenu}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
       </div>
     </nav>
   );

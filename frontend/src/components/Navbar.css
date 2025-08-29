@@ -1,12 +1,9 @@
 /* Navbar.css */
 .navbar {
-  background-color: #333;
-  padding: 0;
+  background-color: black;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar-container {
@@ -47,61 +44,4 @@
   color: #007bff;
 }
 
-.navbar-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 3px 0;
-  transition: 0.3s;
-}
-
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
-  .navbar-menu {
-    position: fixed;
-    left: -100%;
-    top: 60px;
-    flex-direction: column;
-    background-color: #333;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0,0,0,0.05);
-    padding: 2rem 0;
-  }
-
-  .navbar-menu.active {
-    left: 0;
-  }
-
-  .navbar-item {
-    margin: 1rem 0;
-  }
-
-  .navbar-toggle {
-    display: flex;
-  }
-
-  .navbar-toggle.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .navbar-toggle.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .navbar-toggle.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-}
-
-/* Add some body margin to account for fixed navbar */
-body {
-  margin-top: 60px;
-}
