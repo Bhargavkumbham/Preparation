@@ -7,31 +7,18 @@
   background-color: lightblue;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 .hero h1 {
   font-size: 30px;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 20px;
   margin-bottom: 20px;
-}
-
-.hero button {
-  background-color: white;
-  color: lightblue;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.hero button:hover {
-  background-color: white;
 }
 
 .content {

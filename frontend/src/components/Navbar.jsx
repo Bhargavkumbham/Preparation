@@ -1,34 +1,23 @@
 import React from 'react';
 import './Navbar.css';
-
-function Navbar (){
+function Navbar (props){
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <a href="/">MyWebsite</a>
+          <a href="/">{props.brandName}</a>
         </div>
         
         <ul className="navbar-menu">
-          <li className="navbar-item">
-            <a href="/" className="navbar-link">Home</a>
-          </li>
-          <li className="navbar-item">
-            <a href="/about" className="navbar-link">About</a>
-          </li>
-          <li className="navbar-item">
-            <a href="/services" className="navbar-link">Services</a>
-          </li>
-          <li className="navbar-item">
-            <a href="/contact" className="navbar-link">Contact</a>
-          </li>
-          <li className="navbar-item">
-            <a href="/register" className="navbar-link">Register</a>
-          </li>
-        </ul>
+          {props.menuItem.map(item => (
+            <li key={item.title} className="navbar-item">
+              <a href={item.link} className='navbar-link'>{item.title}</a>
+              </li>                 
+          ))}
+        </ul>                                                   
       </div>
     </nav>
   );
-};
+};                                                                                                                                                                                                                                                      
 
-export default Navbar;
+export default Navbar;                                                                                              

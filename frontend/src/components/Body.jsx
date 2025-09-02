@@ -5,9 +5,8 @@ function Body(){
   return (
     <div className="body">
       <section className="hero">
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple and clean website</p>
-        <button>Learn More</button>
+        <h1>Welcome to Lost & Found</h1>
+        <p>This is the place you can find your lost one's</p>
       </section>
 
       <section className="content">
